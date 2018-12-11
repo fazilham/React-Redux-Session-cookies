@@ -1,0 +1,118 @@
+/* ==========================================================================
+Login Page
+========================================================================== */
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body {
+  background: #ffffff;
+}
+
+.login-img {
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.login-form {
+  padding: 100px;
+  color: $gray-600;
+
+  h4 {
+    margin-bottom: 40px;
+  }
+}
+.login-btn {
+  width: 100%;
+  margin: 30px auto 20px;
+}
+.input-group {
+  border-bottom: 1px solid gray;
+}
+.text-input {
+  border: none;
+  width: 90%;
+  margin-left: 10px;
+  background: #e8f0f2;
+}
+
+/* Error tooltip */
+.error-container {
+  position: absolute;
+  z-index: 100;
+  padding-left: 20px;
+}
+.error-tooltip {
+  display: block;
+  position: relative;
+  background-color: #eeeeee;
+  color: red;
+  width: auto;
+  font-size: 10px;
+  font-weight: 700;
+  top: 5px;
+  text-align: center;
+  height: auto;
+  padding: 6px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);
+}
+.error-tooltip:after {
+  content: ' ';
+  position: absolute;
+  left: 8px;
+  top: -8px;
+  border-top: none;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 8px solid #eeeeee;
+}
+.custom-control-label {
+  font-size: 0.8em;
+  line-height: 2;
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
+.loadingicon{
+  height: 20px;
+  text-align : center;
+}
+
+.position-relative.form-group i{width:24px; height:24px;}
+
+@include media-breakpoint-down(lg) {
+  // Smaller than lg: 1024px
+  .login-form {
+    z-index: 999;
+    background-color: $body-bg;
+    opacity: 0.98;
+    max-width: 450px !important;
+    margin: 50px auto;
+    text-align: center;
+    padding: 40px;
+  }
+  .login-img {
+    width: 100%;
+  }
+  input {
+    background: #ffffff;
+  }
+}
+@include media-breakpoint-down(sm) {
+  .login-form {
+    width: 90%;
+  }
+  .login-img {
+    height: 100%;
+  }
+  .login-btn {
+    width: 100%;
+  }
+}

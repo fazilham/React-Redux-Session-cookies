@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+
+//https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+
+
+$roboto-font: 'Roboto', sans-serif;
+$open-sans-font: 'Open Sans', sans-serif;
+$display-none: none;
+$dark-blue: #014864;
+$light-blue: #e8f0f2;
+$theme-colors: (
+  'primary': #80b81b,
+  'danger': #ff4136,
+  'dark-blue': $dark-blue,
+  'light-blue': $light-blue
+);
+
+$body-color: $dark-blue;
+$body-bg: $light-blue;
+$navbar-light-color: white;
+$navbar-light-active-color: white;
+$navbar-light-hover-color: white;
+
+// Import Bootstrap source files from node_modules
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+//login page
+@import 'modules/login/login';
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+a {
+  color: #533f03;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:after,
+  &::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.app-container {
+  box-sizing: border-box;
+}
+
+.container {
+  width: auto;
+  padding: 0 15px;
+}
+
+.dropdown .dropdown-menu {
+  opacity: 0;
+  display: block;
+  visibility: hidden;
+  //transition: all 200ms ease-in;
+  z-index: -1;
+  transform: translateY(-2em);
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 0.01s;
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  z-index: 0;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+
+.col-xl-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}

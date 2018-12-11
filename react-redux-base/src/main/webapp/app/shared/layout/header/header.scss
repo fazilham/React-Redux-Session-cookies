@@ -1,0 +1,92 @@
+header .bg-primary {
+  background: #016894 !important;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.2rem 1rem;
+  z-index: 0;
+}
+
+header .bg-primary a,
+header .bg-primary a.nav-link {
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+}
+header .navbar-brand {
+  margin-right: 3rem;
+}
+
+header .navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+header .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: 0.255em;
+  content: '';
+  border-top: 0;
+  border-right: 0.3em solid transparent !important;
+  border-bottom: 0.3em solid !important;
+  border-left: 0.3em solid transparent !important;
+  padding: 0px !important;
+  margin: 3px 0px 0px 0.6em !important;
+  transform: rotate(180deg) !important;
+  -webkit-transform: rotate(180deg) !important;
+}
+
+.head-userinfo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+}
+.head-userinfo img {
+  margin-right: 5px;
+}
+.menu {
+  border: none !important;
+  width: 250px;
+}
+.menu .input-group {
+  border: none;
+}
+.menu .rt-tbody {
+  padding: 0 10px;
+}
+.menu .rt-thead.-header,
+.menu .rt-thead.-headerGroups {
+  display: none;
+}
+.menu .rt-thead.-filters input {
+  border: none !important;
+}
+.menu .rt-tbody .rt-tr-group {
+  border: none !important;
+}
+.menu .rt-td a {
+  color: #014864 !important;
+  font-size: 1rem;
+}
+.head-userinfo .nav-link {
+  color: #fff;
+}
+.head-userinfo .profile-menu-nav .nav-link {
+  color: #004765 !important;
+  font-weight: bold;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+}
+
+
+
+#account-dropdown .ReactTable .rt-noData {
+  position: relative;
+  top: 20px;
+  padding: 20px;
+  text-align: center;
+  background: none;
+}

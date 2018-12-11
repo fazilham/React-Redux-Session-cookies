@@ -1,0 +1,105 @@
+/* ==========================================================================
+Main Page
+========================================================================== */
+@import '../../app.scss';
+@import '../../../../../../node_modules/react-table/react-table';
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.app-header {
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+}
+
+body {
+  background: #e8f0f2 !important;
+}
+
+.m-b-lg {
+  margin-bottom: 30px;
+}
+
+#app-view-container {
+  padding-top: 70px;
+}
+
+.main .container-fluid{padding:0px;}
+.main{padding-bottom:10px; margin:0px; padding-top: 20px;}
+
+h1 {
+  font-size: 1.6rem;
+  padding: 0px;
+  margin: 0px;
+  color: #004765;
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #9dbc2a;
+  border-color: #9dbc2a;
+}
+.btn-primary:hover {
+  background-color: #016894;
+  border-color: #016894;
+}
+
+
+.view-routes{padding-bottom:50px;}
+.mid-box{
+  display: -webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden;
+}
+
+.mid-box .col.white-box{ flex: 1; background: #fff; margin:0px 15px 10px 15px; padding:0px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);}
+
+.title-bar {
+  background: #004765;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.white-box .ReactTable{border:0px;}
+
+
+/* ==========================================================================
+Accounts Table
+========================================================================== */
+
+.cont-box .-headerGroups{display:$display-none !important;}
+.rt-th{border:0px !important; text-align:left; font-size:.8rem; font-weight:bold; color:#9ba4b0;}
+.rt-th input{width:100%; font-size:.8rem; font-weight:bold; color:#9ba4b0; border:1px solid #c4cfde; padding-left:30px;
+  position:relative; background:url(../../images/table-search-icon.png) no-repeat center left;
+  padding-top:3px; padding-bottom:3px;
+}
+.rt-table{padding:10px;}
+.ReactTable.-striped .rt-tr.-odd{background:none;}
+.ReactTable .rt-thead.-header{box-shadow:unset !important; border-bottom:1px solid #e0e0e0; padding-bottom:5px;}
+.rt-thead  .table-header.-cursor-pointer{position:relative; top:3px;}
+.ReactTable .rt-tbody .rt-tr-group{border:0px; font-size:.8rem; font-weight:bold; color:#9ba4b0;}
+.ReactTable .rt-tbody .rt-td{border:0px;}
+.ReactTable .rt-tbody .rt-tr-group a{color:#004765; font-weight:normal;}
+.ReactTable .rt-tbody .rt-tr-group a:hover{text-decoration:none;}
+.ReactTable .rt-td{padding-top:3px; padding-bottom:3px;}
+.ReactTable .rt-thead .rt-th.-sort-asc{box-shadow:unset; background:url(../../images/downarrow.png) no-repeat center right;}
+#account-dropdown .ReactTable .rt-th{padding:0px 0px 5px 0px !important;}
+.ReactTable .rt-thead .rt-th.-sort-desc{box-shadow:unset; background:url(../../images/uparrow.png) no-repeat center right;}
+.activity-stream img{max-width:100%;}
+.dash-accounts .rt-thead .rt-th input[type=checkbox]{
+  display:none;
+}
+.ReactTable .rt-tbody .rt-tr-group{
+  color:#004765;
+}
+.ReactTable .rt-tbody .rt-tr-group .date{
+  font-weight: normal;
+}
